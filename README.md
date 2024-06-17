@@ -15,7 +15,7 @@ Before you begin, ensure you have the following installed:
 First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/ksharma67/Flask
-cd flask_app
+cd Flask
 ```
 
 ### Build the Docker Image
