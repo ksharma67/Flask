@@ -12,7 +12,7 @@ def hello_world():
     return f"Hello {name}!"
 
 @app.route("/api", methods=["POST"])
-@cross_origin(origin=os.getenv('http://localhost:3000'))
+@cross_origin(origin=os.getenv('https://nextjs-73lxg2xukq-uc.a.run.app'))
 def api():
     """Example API route."""
     data = request.json
@@ -22,7 +22,7 @@ def api():
     return jsonify({"message": result})
 
 @app.route("/run_flow", methods=["POST"])
-@cross_origin(origin=os.getenv('http://localhost:3000'))
+@cross_origin(origin=os.getenv('https://nextjs-73lxg2xukq-uc.a.run.app'))
 def run_flow():
     """Route to run all nodes in the flow one by one."""
     data = request.json
