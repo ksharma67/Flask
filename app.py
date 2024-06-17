@@ -1,9 +1,9 @@
 import os
-import Flask_CORS as cors
+import flask_cors as cors
 from flask import Flask
 
 app = Flask(__name__)
-cors = CORS(app)
+cors.CORS(app)
 
 @app.route("/")
 def hello_world():
